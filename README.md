@@ -51,24 +51,41 @@ To compile the C++ source code, use the following command:
 
 ```bash
 mpic++ -o md_simulation md_simulation.cpp -lcuda
-
+```
 
 This will create an executable file md_simulation that is ready to run.
 
-Run the Simulation
+## Run the Simulation
 To run the simulation, use mpirun to launch the program with multiple processes. For example, to run with 4 processes:
-mpirun -np 4 ./md_simulation
 
+```bash
+
+mpirun -np 4 ./md_simulation
+```
 You can adjust the number of processes based on the number of available CPU cores or nodes.
 
-Input and Output
+## Input and Output
+
 Input: The input consists of initial particle data (position, velocity) that can be generated randomly or read from an external file (e.g., .xyz, .pdb).
 Output: The simulation calculates forces and updates particle positions. Results can be stored in files, such as .dat or .xyz, depending on the desired output format.
 
-File Formats
+## File Formats
 .cpp: C++ source code file containing the simulation logic.
 .xyz: A simple text-based format for storing atomic coordinates and simulation data.
 .dat: A generic data format used to store simulation results like forces and energies.
-lua
-Copy code
+sql
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
